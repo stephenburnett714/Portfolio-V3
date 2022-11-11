@@ -33,13 +33,13 @@ export default function contact() {
                   size="2x"
                 />
               </span>
-              <span className="text-black lg:text-lg">
+              <span className="text-black lg:text-lg blue-hover">
                 Email: Stephenburnett714@gmail.com
               </span>
             </a>
           </div>
 
-          <div className="flex flex-row py-4">
+          <div className="flex flex-row py-8 ">
             <a
               href="https://www.linkedin.com/in/stephen-burnett/"
               className="flex items-center"
@@ -54,7 +54,7 @@ export default function contact() {
                   size="2x"
                 />
               </span>
-              <span className="text-black lg:text-lg">
+              <span className="text-black lg:text-lg blue-hover">
                 LinkedIn: Linkedin.com/in/stephen-burnett
               </span>
             </a>
@@ -75,7 +75,7 @@ export default function contact() {
                   size="2x"
                 />
               </span>
-              <span className="text-black lg:text-lg">
+              <span className="text-black lg:text-lg blue-hover">
                 Github: Github.com/stephenburnett714
               </span>
             </a>

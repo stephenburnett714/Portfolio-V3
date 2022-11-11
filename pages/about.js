@@ -1,6 +1,5 @@
 import Footer from "./footer";
 import React, { useEffect } from "react";
-import Navbar from "./NavbarInverse";
 import profile from "../Images/Profile.jpeg";
 import Image from "next/image"
 
@@ -10,7 +9,6 @@ export default function about() {
     });  
   return (
     <div>
-    <Navbar />
     {/* _______________ */}
     {/* Stephen Burnett */}
     {/* _______________ */}
@@ -35,7 +33,7 @@ export default function about() {
       </div>
       <div className="px-16 lg:px-32 flex justify-center items-center lg:flex-none">
         <div>
-          <Image className="rounded self-center" src={profile} alt="" />
+          <Image className="rounded-tl-3xl rounded-br-3xl self-center" src={profile} height="600" width="400" alt="" />
         </div>
       </div>
     </div>

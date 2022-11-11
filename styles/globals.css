@@ -10,11 +10,8 @@
   color: white;
 }
 
-.half-height {
-  height: 70%;
-  width: 70%;
-}
 
-.back-z-index {
-  z-index: 0;
+.blue-hover:hover {
+  text-decoration: none;
+  color: rgb(62, 178, 201);
 }
