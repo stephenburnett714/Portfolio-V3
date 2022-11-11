@@ -5,13 +5,13 @@ import React, { useEffect } from "react";
 import Computer from "../Images/Computer.png";
 import Research from "../Images/Research.png";
 import Development from "../Images/Development.png";
-import Navbar from "./navbar";
-import Footer from "./footer";
 
 export default function Home() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    });  
   return (
     <div>
-      <Navbar />
       <div id="home">
         {/* ________________ */}
         {/* Your “go-to” guy */}
@@ -26,8 +26,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
-            <Image className="px-4" src={Computer} alt="" />
+          <div className="md:w-2/5 flex justify-center px-4">
+            <Image src={Computer} width={250} height={300} />
           </div>
         </div>
         {/* ___________________ */}
@@ -84,7 +84,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

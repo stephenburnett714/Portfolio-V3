@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Navbaar */
+
+.white-hover:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.half-height {
+  height: 70%;
+  width: 70%;
+}
+
+.back-z-index {
+  z-index: 0;
+}

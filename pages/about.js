@@ -5,6 +5,9 @@ import profile from "../Images/Profile.jpeg";
 import Image from "next/image"
 
 export default function about() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    });  
   return (
     <div>
     <Navbar />
@@ -38,9 +41,8 @@ export default function about() {
     </div>
     
     <div className="flex justify-center">
-      <div className="mb-16 call-color p-2 rounded text-white">Download Resume</div>
+      <div className="mb-16 bg-blue-400 p-2 rounded text-white">Download Resume</div>
     </div>
-    <Footer />
   </div>
   )
 }
