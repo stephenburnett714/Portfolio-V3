@@ -15,3 +15,25 @@
   text-decoration: none;
   color: rgb(62, 178, 201);
 }
+
+.button-hover:hover {
+  background-color:rgb(57, 119, 252);
+}
+
+.larger-text {
+  transition: all 0.1s ease-in-out;
+}
+
+
+.larger-text:hover {
+  transform: scale(1.1);
+}
+
+
+.background-color {
+  background-color: #111827;
+}
+
+.page-font {
+  font-family: 'Inter';
+}

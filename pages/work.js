@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import Image from "next/image"
 import PortfolioData from "./api/Portfoliodata"
 
 export default function work() {
@@ -42,9 +43,11 @@ export default function work() {
               </div>
               <div className="flex justify-center lg:self-center lg:flex-none pb-4 lg:pb-0">
                 <div className="image-height">
-                  <img
+                  <Image
                     className="w-auto rounded-lg lg:object-fill"
                     src={project.image}
+                    width="500px"
+                    height="300px"
                     alt=""
                   />
                 </div>

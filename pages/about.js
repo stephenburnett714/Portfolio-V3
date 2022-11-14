@@ -1,4 +1,3 @@
-import Footer from "./footer";
 import React, { useEffect } from "react";
 import profile from "../Images/Profile.jpeg";
 import Image from "next/image"
@@ -17,7 +16,7 @@ export default function about() {
         <div className="text-4xl pb-4">About Me</div>
         <div className="pb-5 lg:pb-0">
           I am an inquisitive and diligent software engineer who has over six
-          years of consulting experience. I have a passion for problem solving
+          years of management and consulting experience. I have a passion for problem solving
           and learning. Consulting has taught me to live in a growth mindset
           where I strive to be better everyday. Working as a business analyst
           at Navitas Billing ignited my enthusiasm for coding and ultimately
@@ -37,10 +36,11 @@ export default function about() {
         </div>
       </div>
     </div>
-    
+    <a href="/StephenBurnettResume.pdf" download="StephenBurnettResume">
     <div className="flex justify-center">
-      <div className="mb-16 bg-blue-400 p-2 rounded text-white">Download Resume</div>
+      <div className="cursor-pointer button-hover mb-16 bg-blue-400 p-2 rounded text-white">Download Resume</div>
     </div>
+    </a>
   </div>
   )
 }

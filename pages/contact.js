@@ -57,7 +57,7 @@ export default function contact() {
               <span className="text-black lg:text-lg blue-hover">
                 LinkedIn: Linkedin.com/in/stephen-burnett
               </span>
-            </a>
+              </a>
           </div>
 
           <div className="flex flex-row">
