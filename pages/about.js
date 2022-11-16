@@ -1,46 +1,26 @@
-import React, { useEffect } from "react";
-import profile from "../Images/Profile.jpeg";
 import Image from "next/image"
 
-export default function about() {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    });  
+export default function About() {
   return (
-    <div>
-    {/* _______________ */}
-    {/* Stephen Burnett */}
-    {/* _______________ */}
-    <div className="pt-24 pb-12 lg:pb-20 lg:grid lg:grid-cols-2 lg:py-32">
-      <div className="flex content-center flex-col justify-center px-16 lg:px-24 py-0">
-        <div className="text-4xl pb-4">About Me</div>
-        <div className="pb-5 lg:pb-0">
-          I am an inquisitive and diligent software engineer who has over six
-          years of management and consulting experience. I have a passion for problem solving
-          and learning. Consulting has taught me to live in a growth mindset
-          where I strive to be better everyday. Working as a business analyst
-          at Navitas Billing ignited my enthusiasm for coding and ultimately
-          led me to pursue a career change.
-          <br />
-          <br />
-          Graduate of General Assembly a Software Engineering Immerse program
-          that included over 400 hours of professional training over 12 weeks.
-          Utilized a hands-on approach to design and build full-stack web
-          applications with full CRUD functionality through Javascript, React,
-          Express, SQL, PostgreSQL, HTML, CSS, Ruby, Rails and Sequelize.
-        </div>
+    <div id="about" className="py-16">
+    <div className="text-4xl py-4">About Me</div>
+    <div className="flex flex-col lg:flex-row justify-center">
+      <div className="lg:w-2/5 flex justify-center py-8 lg:py-0">
+        <Image src="/Wink.svg" height="250px" width="300px" />
       </div>
-      <div className="px-16 lg:px-32 flex justify-center items-center lg:flex-none">
-        <div>
-          <Image className="rounded-tl-3xl rounded-br-3xl self-center" src={profile} height="600" width="400" alt="" />
+      <div className="lg:w-3/5 self-center p-2">
+        <div className="text-3xl">A passionate coder</div>
+        <div className="text-xl py-3">
+          I am an inquisitive and diligent software engineer who has over
+          six years of management and consulting experience. I have a
+          passion for problem solving and learning. Consulting has taught
+          me to live in a growth mindset where I strive to be better
+          everyday. Working as a business analyst at Navitas Billing
+          ignited my enthusiasm for coding and ultimately led me to pursue
+          a career change.
         </div>
       </div>
     </div>
-    <a href="/StephenBurnettResume.pdf" download="StephenBurnettResume">
-    <div className="flex justify-center">
-      <div className="cursor-pointer button-hover mb-16 bg-blue-400 p-2 rounded text-white">Download Resume</div>
-    </div>
-    </a>
   </div>
   )
 }
