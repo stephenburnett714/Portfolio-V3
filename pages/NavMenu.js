@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from "next/link";
+import {Link} from "react-scroll";
 import styled from 'styled-components'
 
 
@@ -38,20 +38,20 @@ export default function NavMenu(props) {
     return (
         <Ul  open={props.open}>
             <div></div>
-            <Link href={'/'}>
-                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Home</li>
+            <Link to="projects" spy={true} smooth={true} offset={-150} duration={500}>
+                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Projects</li>
             </Link>
 
-            <Link href={'/about'}>
+            <Link to="stack" spy={true} smooth={true} offset={-150} duration={500}>
+                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Tech Stack</li>
+            </Link>
+
+            <Link to="about" spy={true} smooth={true} offset={-150} duration={500}
+                >
                 <li onClick={() => setOpen(!open)} className="text-black text-2xl">About</li>
             </Link>
 
-            <Link href={'/work'}
-                >
-                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Work</li>
-            </Link>
-
-            <Link href={'/contact'}
+            <Link to="contact" spy={true} smooth={true} offset={-150} duration={500}
                 >
                  <li onClick={() => setOpen(!open)} className="text-black text-2xl">Contact</li>
             </Link>
