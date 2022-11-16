@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faCircleChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Logos from "./api/logos";
 import PortfolioData from "./api/PortfolioData";
 
@@ -28,7 +28,7 @@ export default function Home() {
                 process of bringing ideas to reality.
               </div>
             </div>
-            <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded w-28 flex flex-row justify-between">
+            <button class="button-color hover:bg-blue-700 font-bold py-2 px-4 rounded w-28 flex flex-row justify-between">
               <div>
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -36,10 +36,10 @@ export default function Home() {
                   size="md"
                 />
               </div>
-              <div className="text-sm">Contact</div>
+              <div className="text-sm text-center">Contact</div>
             </button>
           </div>
-          <div className="lg:w-2/5 flex justify-center px-4 py-6">
+          <div className="lg:w-2/5 flex justify-center lg:px-4 lg:py-6">
             <Image src="/Wave.svg" width={250} height={300} />
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="text-4xl">Projects</div>
         <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 rounded overflow-hidden ">
           {PortfolioData.map((project, index) => (
-            <div className="flex flex-col p-4 self-center">
+            <div className="flex flex-col py-4 md:p-4 ">
               <img
                 className="rounded-t-xl"
                 src={project.image}
@@ -59,10 +59,10 @@ export default function Home() {
                 alt={project.title}
               />
               <div class="p-6 bg-white rounded-b-xl">
-                <div class="font-bold text-xl mb-2 justify-center">
+                <div class="font-bold text-xl mb-2 justify-center text-black">
                   {project.title}
                 </div>
-                <p class="text-gray-700 text-base">{project.description}</p>
+                <p className="text-gray-700 text-sm md:text-base h-72">{project.description}</p>
                 <div className="flex flex-row justify-between">
                   <button className="bg-black rounded-xl p-2">
                     Live Website
@@ -117,13 +117,13 @@ export default function Home() {
 
         {/*Lets Chat */}
 
-        <div className="py-8 px-6 flex flex-col lg:flex-row rounded bg-slate-600 m-4">
-          <div className="lg:w-3/5 py-6">
+        <div className="py-8 px-6 flex flex-col lg:flex-row rounded bg-gray-800 m-4">
+          <div className="lg:w-3/5">
           <div className="text-4xl py-4">Let's Chat!</div>
           <div className="text-xl">I am currently open to joining a new team as a ‘full-stack’ or ‘front-end’ engineer.</div>
           </div>
           <div className="flex justify-center lg:w-2/5">
-            <button className="p-2 bg-blue-600 rounded self-center">Contact</button>
+            <button className="p-2 button-color rounded self-center">Contact</button>
           </div>
         
         </div>
@@ -163,9 +163,7 @@ export default function Home() {
                 />
               </span>
             </a>
-
             {/*Github */}
-
             <a
               href="https://github.com/stephenburnett714"
               className="flex items-center"
@@ -181,8 +179,6 @@ export default function Home() {
                 />
               </span>
             </a>
-
-
             </div>
             <div>Stephen Burnett - Software Engineer</div>
           </div>
@@ -190,8 +186,8 @@ export default function Home() {
 
         {/*Arrow Up */}
 
-        <div>
-
+        <div className="flex justify-end">
+            <div><FontAwesomeIcon icon={faCircleChevronUp} size="2x" style={{ color: "#4b4efc" }}/></div>
         </div>
 
         {/* ___________________ */}
