@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-scroll"
+import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faCircleChevronUp } from '@fortawesome/free-solid-svg-icons'
@@ -7,7 +8,7 @@ import { faEnvelope, faCircleChevronUp } from '@fortawesome/free-solid-svg-icons
 export default function Footer() {
   return (
     <div>
-        <div className="py-16">
+        <div className="pt-16 pb-8">
           <div className="flex flex-col md:flex-row justify-center md:justify-between">
             <div className="flex flex-row">
               {/*Linkedin */}
@@ -65,11 +66,12 @@ export default function Footer() {
 
         <div className="flex justify-end">
         <Link to="home" spy={true} smooth={true} offset={-150} duration={500}>
-            <FontAwesomeIcon
+          <Image src="/upButton.svg" height="75px" width="75px"></Image>
+            {/* <FontAwesomeIcon
               icon={faCircleChevronUp}
               size="2x"
               style={{ color: "#4b4efc" }}
-            />
+            /> */}
           </Link>
         </div>
     </div>
